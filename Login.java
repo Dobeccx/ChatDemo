@@ -28,11 +28,11 @@ public class Login {
 	private JTextField txt_UserName;
 	private JPasswordField txt_Password;
 //	private String url = "jdbc:mysql://localhost:3306/chat";
-	private String url = "jdbc:mysql://112.74.96.109:3306/Chat";
+	private String url = "jdbc:mysql://*****/Chat";
 //	private String user = "root";
-	private String user = "Dobeccx";
+	private String user = "*****";
 //	private String password = "*****";//it need to be changed
-	private String password = "dobeccx";//it need to be changed
+	private String password = "*****";//it need to be changed
 	private String driver = "com.mysql.jdbc.Driver";
 	private Connection con;
 	private ResultSet res;
@@ -71,13 +71,13 @@ public class Login {
 		
 		JLabel lblNewLabel = new JLabel("UserName");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setFont(new Font("宋体", Font.PLAIN, 20));
+		lblNewLabel.setFont(new Font("瀹嬩綋", Font.PLAIN, 20));
 		lblNewLabel.setBounds(109, 118, 117, 48);
 		frame.getContentPane().add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Password");
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1.setFont(new Font("宋体", Font.PLAIN, 20));
+		lblNewLabel_1.setFont(new Font("瀹嬩綋", Font.PLAIN, 20));
 		lblNewLabel_1.setBounds(109, 259, 117, 41);
 		frame.getContentPane().add(lblNewLabel_1);
 		
@@ -107,7 +107,7 @@ public class Login {
 				
 			}
 		});
-		btnLogin.setFont(new Font("宋体", Font.PLAIN, 20));
+		btnLogin.setFont(new Font("瀹嬩綋", Font.PLAIN, 20));
 		btnLogin.setBounds(126, 402, 127, 41);
 		frame.getContentPane().add(btnLogin);
 		
@@ -118,7 +118,7 @@ public class Login {
 				txt_Password.setText("");
 			}
 		});
-		btnCancel.setFont(new Font("宋体", Font.PLAIN, 20));
+		btnCancel.setFont(new Font("瀹嬩綋", Font.PLAIN, 20));
 		btnCancel.setBounds(373, 402, 127, 41);
 		frame.getContentPane().add(btnCancel);
 		
@@ -145,7 +145,7 @@ public class Login {
 				window.getChatroom().setVisible(true);
 			}
 			else {
-				lbl_warning.setText("用户名或者密码输入错误！");
+				lbl_warning.setText("鐢ㄦ埛鍚嶆垨鑰呭瘑鐮佽緭鍏ラ敊璇紒");
 				txt_UserName.setText("");
 				txt_Password.setText("");
 			}
@@ -181,7 +181,7 @@ public class Login {
 				window.getChatroom().setVisible(true);
 			}
 			else {
-				lbl_warning.setText("用户名或者密码输入错误！");
+				lbl_warning.setText("鐢ㄦ埛鍚嶆垨鑰呭瘑鐮佽緭鍏ラ敊璇紒");
 				txt_UserName.setText("");
 				txt_Password.setText("");
 			}
